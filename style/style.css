@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+div,ul, ol, li, h1, h2, h3, h4, h5, h6, pre, input, textarea, p, blockquote {
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-size:14px;
+	margin:0;
+	padding:0;overflow:hidden;
+}
+dd{
+	line-height:1.5em;
+}
+fieldset {
+	padding:10px;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
+label,input,button{
+vertical-align:middle;
+}
+em {
+	font-style:normal;
+	color:#f55;
+}
+p {
+	line-height:2em;
+}
+a {
+	text-decoration:none;
+}
+h1{
+	background:#303030;
+	box-shadow:0 5px 10px rgba(30,30,30,0.5);
+	padding:10px 0;
+	margin-bottom:20px;
+}
+h1 a{
+	color:#0cc;
+}
+h1 a:hover{
+	color:#f00;
+}
+#coder{
+	float:left;
+	width:100%;
+}
+#sider{
+	width:200px;
+	margin-left:-200px;
+	float:left;
+	overflow:hidden;
+}
+#sider ol li{
+	list-style:outside decimal;
+	margin-left:2.5em;
+}
+#edit_area{	
+	margin:0 220px 10px 0;
+}
+#code {
+	width:100%;
+	height:360px;
+}
+#ctrl {
+	text-align:center;
+}
+#stuff {
+	text-align:center;
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:100%;
+	color:#0cc;
+	background:#303030;
+	padding:10px 0;
+	box-shadow:0 -5px 10px rgba(30,30,30,0.5);clear:both;
+}
+#stuff a{
+	color:#f00;
+}
+#popup{
+background:#FCFAC0;
+display:none;
+border-radius:5px;
+padding:10px 20px 5px 20px;
+position:absolute;
+z-index:9;
+max-width:450px;
+}
+#popup img{
+	border:0 none;
+	vertical-align:middle;
+}
+#popup .popup_close{
+position:absolute;
+color:#000;
+bottom:5px;
+right:5px;
+}
