@@ -1,3 +1,4 @@
+/* @profile	define Emmet output profile */
 var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
 	mode: 'text/html',
     lineNumbers: true,
@@ -6,6 +7,7 @@ var editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
     autoCloseBrackets: true,
     styleActiveLine: true,
     matchBrackets: true,
+    profile: 'xhtml',
     theme:'ambiance'
 });
 var action = {
