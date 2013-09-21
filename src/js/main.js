@@ -14,13 +14,15 @@ var action = {
 }
 $(function(){
 	var myURL = window.location.protocol+'//'+window.location.host+'/?';
-	var reloadbody = $('#myDlg .modal-body p').html();
+	var reloadbody = $('#myDlg .modal-body').html();
+	//preview html
 	$('[data-func="preview"]').click(function(){
 		var win = window.open("", "", "");
 		win.opener = null;
 		win.document.write(editor.doc.getValue());
 		win.document.close();
 	});
+	//request a share link
 	$('[data-func="share"]').click(function(){
 		$('#myDlg').modal();
 		
@@ -29,8 +31,9 @@ $(function(){
 			$('#copy-button').data('clipboard-text',myURL+data.id);
 		});
 	});
+	//reset dialog body content
 	$(document.body).on('hidden.bs.modal', function () {
-		$(this).find('.modal-body p').html(reloadbody);
+		$(this).find('.modal-body').html(reloadbody);
 	});
 
 	//clipboard
