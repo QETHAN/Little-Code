@@ -1,1 +1,0 @@
-%3C!DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%3Cmeta%20charset%3D%22utf-8%22%20%2F%3E%0A%3Ctitle%3EHTML5%3C%2Ftitle%3E%0A%3C%2Fhead%3E%0A%3Cbody%3E%0A%0A%3C%2Fbody%3E%0A%3C%2Fhtml%3E%0A%20%20%20%20%20%20
