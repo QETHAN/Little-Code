@@ -1,0 +1,16 @@
+body{padding-top: 50px;font-family: "Microsoft YaHei",Helvetica,Arial,sans-serif;}
+/*navigation*/
+.navbar-inverse .navbar-inner{background-image: none;border-color: transparent;}
+.navbar .navbar-brand {color: #428bca;font-size: 24px;}
+.navbar .navbar-brand:hover{color: #f00;}
+.navbar-function{float: right;line-height: 48px;}
+.btn-func{margin: 8px;}
+.btn{border-radius: 3px;}
+.modal-content{border-radius: 0px;}
+.dropdown-menu {border-radius: 0 0 3px 4px;}
+/*editor*/
+.CodeMirror{height: 480px;}
+.editarea{margin-top: 20px;}
+#editor{width: 100%;height: 480px;}
+/*footer*/
+footer{text-align: center;}

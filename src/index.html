@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>小可&lt;Little Code /&gt;</title>
+<meta name="description" content="online code editor,online code sharing,little code,在线代码编辑器,小可代码分享">
+<meta name="viewport" content="width=device-width">
+<link rel="shortcut icon" href="http://www.wanz.im/favicon.ico" />
+<link rel="stylesheet" href="http://cdn.staticfile.org/codemirror/3.16.0/codemirror.css">
+<link rel="stylesheet" href="http://cdn.staticfile.org/codemirror/3.16.0/theme/ambiance.css">
+<link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.0.0/css/bootstrap.css">
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+    <div class="navbar-header"><a class="navbar-brand" href="http://code.wanz.im">小可&lt;Little Code /&gt;</a></div>
+    <div class="navbar-function">
+      <ul class="nav navbar-nav">
+        <li><a href="http://i.wanz.im" target="blank">博客</a></li>
+        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">帮助 <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://docs.emmet.io/abbreviations/syntax/" target="blank">Emmet使用说明</a></li>
+            <li class="divider"></li>
+            <li><a href="http://t.qq.com/hiwanz" target="blank">腾讯微博 @hiwanz</a></li>
+            <li><a href="http://weibo.com/hiwanz" target="blank">新浪微博 @hiwanz</a></li>
+            <li><a href="https://twitter.com/hiwanz" target="blank">Twitter @hiwanz</a></li>
+            <li><a href="https://github.com/hiwanz/Little-Code" target="blank">Fork on Github</a></li>
+          </ul>
+        </li>
+      </ul>
+      <button type="button" class="btn btn-primary btn-func" data-func="preview">预览</button>
+      <button type="button" class="btn btn-func" data-func="share">分享</button>
+    </div>
+    <!--/.navbar-function --> 
+
+  </div>
+      </div>
+    </div>
+
+<div class="container"> 
+  <div class="row">
+    <div class="col-lg-8">
+      <div class="editarea"><form><textarea id="editor">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HTML5</title>
+</head>
+<body>
+
+</body>
+</html>
+      </textarea></form></div>
+    </div>
+    <div class="col-lg-4">
+      <h2>快速开始</h2>
+      <p>将代码贴到左边的编辑器里，点击上面的 <code>预览</code> 或 <code>分享</code> 按钮，就可以查看代码运行效果或者生成代码分享链接</p>
+      <p><a class="btn btn-default" href="https://chrome.google.com/webstore/detail/run-selected-html/eefflcdphpehljcadbmkdpopmbamfefl" target="blank">安装可以运行HTML的Chrome扩展 &raquo;</a></p>
+      <p><a class="btn btn-default" href="https://chrome.google.com/webstore/detail/viewport-resizer/kapnjjcfcncngkadhpmijlkblpibdcgm" target="blank">安装测试响应式页面的Chrome扩展 &raquo;</a></p>
+    </div>
+  </div>
+  <hr>
+  <footer>
+    <p>&copy; hiwanz 2013</p>
+  </footer>
+</div>
+<!-- /container -->
+<!-- Modal -->
+<div id="myDlg" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">小可提示</h4>
+      </div>
+      <div class="modal-body">
+        <p><img src="http://cdn.staticfile.org/bootstrap-modal/2.1.0/ajax-loader.gif" alt="loading..." />正在努力加载...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+        <button type="button" id="copy-button" class="btn btn-primary">复制链接</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- /Modal -->
+<script src='http://cdn.staticfile.org/jquery/1.10.2/jquery.min.js'></script> 
+<script src="http://cdn.staticfile.org/twitter-bootstrap/3.0.0/js/bootstrap.min.js"></script> 
+<script src="http://cdn.staticfile.org/zeroclipboard/1.1.7/ZeroClipboard.min.js"></script> 
+<script src="http://cdn.staticfile.org/codemirror/3.16.0/codemirror.js"></script>
+<script src="http://cdn.staticfile.org/codemirror/3.16.0/mode/xml/xml.js"></script>
+<script src="http://cdn.staticfile.org/codemirror/3.16.0/mode/css/css.js"></script>
+<script src="http://cdn.staticfile.org/codemirror/3.16.0/mode/javascript/javascript.js"></script>
+<script src="http://cdn.staticfile.org/codemirror/3.16.0/mode/htmlmixed/htmlmixed.js"></script>
+<script src="http://cdn.staticfile.org/codemirror/3.16.0/addon/edit/closetag.js"></script>
+<script src="http://cdn.staticfile.org/codemirror/3.16.0/addon/edit/closebrackets.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
